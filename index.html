@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B3A82">
+  <meta name="description" content="AprovaLab Estudos: materiais organizados para apoiar sua preparação para concursos públicos.">
+  <title>AprovaLab Estudos | Sua preparação começa aqui</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="AprovaLab Estudos - início">
+      <span class="brand-mark">A<span>.</span></span>
+      <span class="brand-copy"><strong>AprovaLab</strong><small>ESTUDOS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#disciplinas">Disciplinas</a><a href="#biblioteca">Biblioteca</a><a href="#sobre">Sobre</a>
+    </nav>
+    <a class="header-cta" href="#biblioteca">Explorar materiais <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> PLATAFORMA DE ESTUDOS</div>
+        <h1>Sua preparação começa com <em>conhecimento.</em></h1>
+        <p>Encontre materiais de estudo organizados por disciplina e avance na sua jornada rumo à primeira aprovação.</p>
+        <div class="hero-actions">
+          <a class="btn btn-orange" href="#biblioteca">Acessar biblioteca <span>→</span></a>
+          <a class="btn btn-ghost" href="#sobre">Conheça a AprovaLab</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span> Conteúdo organizado para facilitar seus estudos</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="book-stack"><div class="book book-back"></div><div class="book book-mid"></div><div class="book book-front"><span>AL</span><small>PRIMEIRA<br>APROVAÇÃO</small></div></div>
+        <div class="floating-card card-top"><span class="float-icon">▤</span><span><b>Materiais</b><small>por disciplina</small></span></div>
+        <div class="floating-card card-bottom"><span class="float-check">✓</span><span><b>Seu ritmo.</b><small>Sua evolução.</small></span></div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="benefit-strip" aria-label="Diferenciais">
+      <div><span class="benefit-icon">▣</span><span><b>Organização</b><small>Materiais por disciplina</small></span></div>
+      <div><span class="benefit-icon">⌕</span><span><b>Praticidade</b><small>Encontre o que precisa</small></span></div>
+      <div><span class="benefit-icon">✦</span><span><b>Foco no essencial</b><small>Estude com direção</small></span></div>
+    </section>
+
+    <section class="section disciplines" id="disciplinas">
+      <div class="section-heading">
+        <div><div class="eyebrow eyebrow-blue">ORGANIZE SUA PREPARAÇÃO</div><h2>Escolha uma <em>disciplina.</em></h2><p>Acesse a área de estudo que deseja explorar.</p></div>
+      </div>
+      <div class="discipline-grid" id="discipline-grid">
+        <a class="discipline-card" href="#biblioteca" data-filter="portugues"><span class="discipline-symbol">Aa</span><span><b>Língua Portuguesa</b><small>Leitura e interpretação</small></span><span class="card-arrow">↗</span></a>
+        <a class="discipline-card" href="#biblioteca" data-filter="matematica"><span class="discipline-symbol">＋</span><span><b>Matemática</b><small>Fundamentos e cálculos</small></span><span class="card-arrow">↗</span></a>
+        <a class="discipline-card" href="#biblioteca" data-filter="raciocinio-logico"><span class="discipline-symbol">∴</span><span><b>Raciocínio Lógico</b><small>Lógica e resolução</small></span><span class="card-arrow">↗</span></a>
+        <a class="discipline-card" href="#biblioteca" data-filter="informatica"><span class="discipline-symbol">⌘</span><span><b>Informática</b><small>Conceitos e ferramentas</small></span><span class="card-arrow">↗</span></a>
+        <a class="discipline-card" href="#biblioteca" data-filter="direito-constitucional"><span class="discipline-symbol">§</span><span><b>Direito Constitucional</b><small>Base constitucional</small></span><span class="card-arrow">↗</span></a>
+        <a class="discipline-card" href="#biblioteca" data-filter="direito-administrativo"><span class="discipline-symbol">⚖</span><span><b>Direito Administrativo</b><small>Administração pública</small></span><span class="card-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="library-section" id="biblioteca">
+      <div class="section library-inner">
+        <div class="library-heading">
+          <div><div class="eyebrow eyebrow-blue">BIBLIOTECA APROVALAB</div><h2>Materiais de <em>estudo.</em></h2><p>Pesquise e encontre materiais disponíveis na plataforma.</p></div>
+          <div class="library-count"><strong id="material-count">0</strong><span>materiais<br>disponíveis</span></div>
+        </div>
+        <div class="library-tools">
+          <label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Buscar por nome ou disciplina..." aria-label="Buscar materiais"></label>
+          <select id="category-filter" aria-label="Filtrar por disciplina"><option value="todos">Todas as disciplinas</option><option value="portugues">Língua Portuguesa</option><option value="matematica">Matemática</option><option value="raciocinio-logico">Raciocínio Lógico</option><option value="informatica">Informática</option><option value="direito-constitucional">Direito Constitucional</option><option value="direito-administrativo">Direito Administrativo</option></select>
+        </div>
+        <div class="materials-grid" id="materials-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state"><div class="empty-icon">▤</div><h3>A biblioteca está sendo preparada.</h3><p>Em breve, novos materiais serão disponibilizados nesta área.</p></div>
+      </div>
+    </section>
+
+    <section class="about-section section" id="sobre">
+      <div class="about-visual"><div class="about-orb"></div><div class="about-monogram">AL<span>.</span></div><div class="about-tag">APRENDER • ORGANIZAR • AVANÇAR</div></div>
+      <div class="about-copy"><div class="eyebrow eyebrow-blue">SOBRE A APROVALAB</div><h2>Conhecimento que ajuda a abrir <em>caminhos.</em></h2><p>A AprovaLab é uma iniciativa voltada à organização e apresentação de materiais de apoio para quem está começando a estudar para concursos públicos.</p><p>Acreditamos que uma preparação consistente começa com uma boa base, conteúdo acessível e uma rotina de estudos possível de manter.</p><a class="text-link" href="#disciplinas">Conheça as disciplinas <span>→</span></a></div>
+    </section>
+
+    <section class="closing-cta"><div class="closing-decoration"></div><div class="eyebrow">SUA JORNADA COMEÇA AQUI</div><h2>Um passo de cada vez.<br><em>Um estudo de cada vez.</em></h2><a class="btn btn-orange" href="#biblioteca">Explorar biblioteca <span>→</span></a></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="#inicio"><span class="brand-mark">A<span>.</span></span><span class="brand-copy"><strong>AprovaLab</strong><small>ESTUDOS</small></span></a><p>Conhecimento, organização e preparação.</p><span class="footer-copy">© <span id="year"></span> AprovaLab. Todos os direitos reservados.</span></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
